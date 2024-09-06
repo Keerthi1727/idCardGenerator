@@ -1,0 +1,78 @@
+.template {
+  /* background-color: rgb(222, 219, 219); */
+  border: 1px solid black;
+  height: 300px;
+  width: 250px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  flex-direction: column;
+  margin: 5px;
+  position: relative;
+}
+
+#generated-templates {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.id-card-templates {
+  display: none;
+}
+.template img {
+  width: 100px;
+  height: 100px;
+}
+
+.template-field {
+  display: flex;
+  /* justify-content: space-between; */
+  min-width: 150px;
+}
+
+.template-field p:first-child {
+  width: 60px;
+}
+.template-field p:last-child {
+  margin-left: 5px !important;
+}
+.template-field p {
+  font-size: 13px;
+}
+
+#template-1 {
+  background-color: teal;
+  color: white;
+}
+#template-2 {
+  background-color: red;
+  color: white;
+}
+#template-3 {
+  background-color: rgb(123, 68, 200);
+  color: white;
+}
+
+.id-card-templates .selected-card {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.id-card-templates .selected-card::after {
+  content: "\f00c";
+  font-family: FontAwesome;
+  font-size: 60px;
+  position: absolute;
+  /* top: calc(50% - 50px);
+  left: calc(50% - 50px); */
+  /* background-color: grey; */
+  color: rgb(77, 167, 77);
+  /* border: 2px solid white; */
+  width: 250px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(225, 216, 216, 0.439);
+}

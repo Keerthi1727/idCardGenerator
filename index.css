@@ -1,0 +1,73 @@
+* {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#site-title {
+  text-align: center;
+  padding: 3px;
+  border-bottom: 1px solid grey;
+}
+#site-error {
+  text-align: center;
+  padding: 3px;
+  color: red;
+  font-weight: bold;
+  display: none;
+}
+
+#site-title h2 {
+  font-weight: bold;
+}
+label {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+input,
+select {
+  border: 2px solid black;
+  padding: 5px;
+  min-width: 200px;
+  border-radius: 5px;
+  min-height: 35px;
+}
+input::placeholder {
+  font-size: 0.8rem;
+}
+
+button {
+  min-width: 100px;
+  margin: 5px 0px !important;
+  background-color: teal;
+  border: 1px solid white !important;
+  color: white;
+  border-radius: 5px !important;
+  padding: 3px 5px;
+}
+
+.no-of-students,
+.student-field {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+  flex-direction: column;
+  margin: 20px 5px;
+}
+
+#student-details-form {
+  border: 1px solid grey;
+  padding: 5px;
+  border-radius: 5px;
+  display: none;
+}
+
+.student-details-title {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.student-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-bottom: 1px solid grey;
+}
